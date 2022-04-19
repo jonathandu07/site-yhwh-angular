@@ -9,6 +9,10 @@ export class AccueilComponent implements OnInit {
 
   constructor() { }
 
+  title = 'YHWH-Consortium';
+
+  racine = '\src\assets\Logos-officiels\YHWH\SVG\SVG-Petit-Logo';
+
   ngOnInit(): void {
   }
 
