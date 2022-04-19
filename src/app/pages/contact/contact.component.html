@@ -1,1 +1,101 @@
-<p>contact works!</p>
+<!-- corpus -->
+<section class="corpus">
+    <article class="formulaire">
+        <h1 id="haut">Contactez-nous</h1>
+        <form method="contact" action="PhP\contact_YHWH.php" method="post" enctype="multipart/form-data">
+            <aside class="personne">
+                <div class="prenom">
+
+                    <label>
+                        <p>Prénom</p>
+                    </label>
+                    <input type="text" name="prenom" class="input" size="25" maxlength="45" placeholder="prénom"
+                        required>
+                </div>
+
+                <div class="nom">
+                    <label>
+                        <p>Nom</p>
+                    </label>
+                    <input type="text" name="nom" class="input" size="25" maxlength="45" placeholder="nom" required>
+                </div>
+
+            </aside>
+
+            <!-- Checkbox -->
+
+            <aside class="choix">
+                <div class="pro">
+                    <label>
+                        <p>Professionnel</p>
+                    </label>
+                    <input type="checkbox" name="Type" value="Professionnel">
+                </div>
+
+                <div class="particulier">
+                    <label>
+                        <p>Particulier</p>
+                    </label>
+                    <input type="checkbox" name="Type" value="Particulier">
+                </div>
+
+                <div class="organisme">
+                    <label>
+                        <p>Organisme</p>
+                    </label>
+                    <input type="checkbox" name="Type" value="Organisme">
+                </div>
+            </aside>
+
+            <aside class="milieu">
+
+                <div class="Document">
+                    <label for="Document">
+                        <p>Transmettre des documents</p>
+                    </label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" value="Document">
+                </div>
+
+                <div class="Objet">
+                    <label>
+                        <p>Objet du message</p>
+                    </label>
+                    <select name="Objet">
+                        <option value="Commercial" selected>Objet</option>
+                        <option value="Commercial" selected>Commercial</option>
+                        <option value="Candidature" selected>Candidature</option>
+                        <option value="Partenariat" selected>Partenariat</option>
+                        <option value="Journalistique" selected>Journalistique</option>
+                    </select>
+                </div>
+
+            </aside>
+
+            <aside class="message">
+                <div>
+                    <H1>
+                        Message
+                    </H1>
+
+                    <textarea rows="10" cols="50" name="message" placeholder="Ecire..." class="text-zone"
+                        maxlength="1000"></textarea>
+
+                </div>
+
+                <div class="valider">
+                    <input type="submit" value="Valider" class="envoie">
+                </div>
+
+
+            </aside>
+
+
+        </form>
+
+        <!-- formulaire -->
+    </article>
+
+    <!-- <article class="mail">
+            <p class="lettre">&#9993</p>
+        </article> -->
+</section>

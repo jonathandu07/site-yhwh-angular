@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+/* body */
+
+.nav-mobile {
+    display: none;
+}
+
+body {
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+}
+
+/* navbar */
+
+/* fin navbar */
+nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color: black;
+
+}
+
+.nav-pc {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.bouton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.bouton aside {
+    margin-right: 10%;
+
+}
+
+.lien {
+    font-size: 5rem;
+    color: #f9ba05;
+
+}
+
+.lien:hover {
+    text-decoration-color: #B22222;
+}
+
+.lien p {
+    font-size: 2rem;
+}
+
+.logo-grand {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 60%;
+}
+
+/* corpus */
+
+.corpus {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+/* formulaire */
+
+
+.formulaire {
+    background-color: black;
+    margin-top: 2.5%;
+    color: white;
+    margin-left: 5%;
+    border-radius: 2.5rem;
+    margin-bottom: -5.5%;
+}
+
+.formulaire p:hover {
+    color: #f9ba05;
+}
+
+.formulaire h1 {
+    text-align: center;
+}
+
+.personne {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#haut {
+    font-size: 3rem;
+    margin-top: 2%;
+}
+
+.personne label p {
+    font-size: 1.5rem;
+}
+
+.personne input {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+}
+
+/* checkbox */
+
+.choix {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+}
+
+
+
+/* milieu */
+.milieu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+}
+
+.milieu p {
+    font-size: 1.5rem;
+}
+
+.objet {
+    z-index: 1;
+}
+
+/* message */
+
+.message h1 {
+    display: none;
+}
+
+.message {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+}
+
+.text-zone {
+    margin-right: 5%;
+    width: 100%;
+    resize: none;
+}
+
+.text-zone:hover {
+    border: 3px solid #8B0000;
+}
+
+.valider {
+    margin-left: 40%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.envoie {
+    padding-left: 5%;
+    font-size: 1.5rem;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-right: 5%;
+}
+
+.envoie:hover {
+    color: #f9ba05;
+    background-color: #8B0000;
+}
+
+/* mail */
+
+/* .mail{
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0;
+    margin-right: 0%;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.mail p{
+    display:contents;
+    justify-content: center;
+} */
+
+
+/* footer */
+
+footer {
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end:4; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    background-color: black;
+    color: white;
+
+    margin-top: 4%;
+}
+
+.izquierda {
+    display: flex;
+    align-items: center;
+    margin-left: 2.5%;
+}
+
+#copy {
+    font-size: 5rem;
+}
+
+#right p {
+
+    font-size: 2.5rem;
+}
+
+#media {
+    width: 15%;
+    margin-left: 80%;
+
+}
+
+.derecho {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+
+}
