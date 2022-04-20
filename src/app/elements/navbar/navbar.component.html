@@ -1,12 +1,12 @@
 <nav>
     <section class="nav-pc">
         <article class="logo-grand">
-            <img src="\assets\Logos-officiels\YHWH\SVG\SVG-Grand-Logo\JV-SVG-GL-YHWH.svg" size="100%" alt="logo-officiel">
+            <img [src]="chemins.racine+'/YHWH/SVG/SVG-Grand-Logo/JV-SVG-GL-YHWH.svg'" size="100%" alt="logo-officiel">
         </article>
         <!-- boutons -->
         <article class="bouton">
             <aside>
-                <a href="#" class="lien">
+                <a routerLink="/" class="lien">
                     <p>
                         ACCUEIL
                     </p>
@@ -14,7 +14,7 @@
             </aside>
 
             <aside>
-                <a href="presentation-yhwh.html" class="lien">
+                <a routerLink="/presentation" class="lien">
                     <p>
                         PRÉSENTATION
                     </p>
@@ -22,7 +22,7 @@
             </aside>
 
             <aside>
-                <a href="" class="lien">
+                <a routerLink="/blog" class="lien">
                     <p>
                         BLOG
                     </p>
@@ -30,7 +30,7 @@
             </aside>
 
             <aside>
-                <a href="contact-yhwh.html" class="lien">
+                <a routerLink="/contact" class="lien">
                     <p>
                         CONTACT
                     </p>
