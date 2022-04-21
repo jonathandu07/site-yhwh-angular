@@ -7,7 +7,7 @@ export class CheminsService {
 
   constructor() { }
 
-  racine = "/assets/Logos-officiels"
+  racine = "./assets/Logos-officiels"
 
   SvgP ="/SVG/SVG-Petit-Logo"
 }

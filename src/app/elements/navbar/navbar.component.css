@@ -123,10 +123,6 @@ a.lien:hover {
         grid-row-end: 2;
     }
 
-    /* .lien p{
-  font-size:1.5rem;
-} */
-
 }
 
 @media only screen and (max-width:1100px) {
@@ -185,13 +181,13 @@ a.lien:hover {
     }
 
     .logo-grand {
-        width: 75%;
-        grid-column-start: 8;
-        grid-column-end: 10;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
         margin-top: 10%;
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     #menu__toggle {
@@ -218,8 +214,8 @@ a.lien:hover {
 
     .menu__btn {
         position: fixed;
-        top: 20px;
-        left: 20px;
+        top: 2.5rem;
+        left: 90%;
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -233,7 +229,7 @@ a.lien:hover {
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #616161;
+        background-color: #f9ba05;
         transition-duration: .25s;
     }
 
@@ -253,11 +249,11 @@ a.lien:hover {
         top: 0;
         left: -100%;
         width: 300px;
-        height: 100%;
+        height: 50%;
         margin: 0;
         padding: 80px 0;
         list-style: none;
-        background-color: #ECEFF1;
+        background-color: #eceff152;
         box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
         transition-duration: .25s;
     }
@@ -265,12 +261,16 @@ a.lien:hover {
     .menu__item {
         display: block;
         padding: 12px 24px;
-        color: #333;
+        color: #B22222;
         font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 1.5rem;
+        font-weight: 600px;
         text-decoration: none;
         transition-duration: .25s;
+    }
+
+    .haut{
+        margin-top: 5%;
     }
 
     .menu__item:hover {

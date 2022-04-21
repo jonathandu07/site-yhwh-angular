@@ -97,80 +97,6 @@ section {
     margin-bottom: 5%;
 }
 
-/* footer */
-
-footer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    background-color: #000000;
-}
-
-.izquierda {
-    display: flex;
-    margin-left: 5%;
-    margin-top: 8%;
-
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#copy {
-    color: white;
-    font-size: 5rem;
-}
-
-#right {
-    color: white;
-    margin-right: 5%;
-    margin-top: 2%;
-}
-
-#right p {
-    font-size: 3rem;
-}
-
-.medio {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-    margin-top: 10%;
-}
-
-.portefolio {
-    text-decoration-color: #f9ba05;
-    font-size: 3rem;
-}
-
-#portefolio {
-    color: #f9ba05;
-    font-size: 3rem;
-}
-
-.portefolio:hover {
-    text-decoration-color: #B22222;
-}
-
-.derecho {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-    margin-top: 5%;
-    margin-right: 0%;
-}
-
-#media {
-    width: 50%;
-}
 
 /* ===========================================
                     responsive
@@ -302,7 +228,12 @@ footer {
 
 @media only screen and (max-width:800px) {
     .camino {
-        display: none;
+        margin-top: 25%;
+        display: block;
+    }
+
+    .titulo {
+        font-size:1.5rem;
     }
 }
 

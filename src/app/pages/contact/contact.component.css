@@ -6,78 +6,6 @@
     list-style-type: none;
 }
 
-/* body */
-
-.nav-mobile {
-    display: none;
-}
-
-body {
-    /* display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; */
-}
-
-/* navbar */
-
-/* fin navbar */
-nav {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-    background-color: black;
-
-}
-
-.nav-pc {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.bouton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    grid-column-start: 3;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.bouton aside {
-    margin-right: 10%;
-
-}
-
-.lien {
-    font-size: 5rem;
-    color: #f9ba05;
-
-}
-
-.lien:hover {
-    text-decoration-color: #B22222;
-}
-
-.lien p {
-    font-size: 2rem;
-}
-
-.logo-grand {
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    width: 60%;
-}
-
 /* corpus */
 
 .corpus {
@@ -102,7 +30,7 @@ nav {
     color: white;
     margin-left: 5%;
     border-radius: 2.5rem;
-    margin-bottom: -5.5%;
+    margin-bottom: 1.5%;
 }
 
 .formulaire p:hover {
@@ -207,70 +135,177 @@ nav {
     background-color: #8B0000;
 }
 
-/* mail */
+/* ===========================================
+                    responsive
+  ============================================= */
 
-/* .mail{
-    margin-left: 0%;
-    margin-top: 0%;
-    margin-bottom: 0;
-    margin-right: 0%;
+@media only screen and (max-width:1100px) {
 
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
+    .personne {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    #haut {
+        font-size: 3rem;
+        margin-top: 2%;
+    }
+    
+    .personne label p {
+        font-size: 1.5rem;
+    }
+    
+    .personne input {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-bottom: 2.5%;
+        padding-top: 2.5%;
+    }
+    
+    /* checkbox */
 
-.mail p{
-    display:contents;
-    justify-content: center;
-} */
+    .choix {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: 2.5%;
+    }
 
+    /* Milieu */
 
-/* footer */
+    .milieu {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2.5%;
+    }
 
-footer {
-    /* grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end:4; */
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-    background-color: black;
-    color: white;
-
-    margin-top: 4%;
-}
-
-.izquierda {
-    display: flex;
-    align-items: center;
-    margin-left: 2.5%;
-}
-
-#copy {
-    font-size: 5rem;
-}
-
-#right p {
-
-    font-size: 2.5rem;
-}
-
-#media {
-    width: 15%;
-    margin-left: 80%;
+    .Document {
+        margin-bottom: 2.5%;
+    }
 
 }
 
-.derecho {
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
+@media only screen and (max-width:970px) {
+
+    .personne {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2.5%;
+    }
+
+    .personne label{
+        text-align: center;
+        margin-right: 2.5%;
+    }
+
+    #haut {
+        font-size: 2rem;
+        margin-top: 2%;
+    }
+
+    .Document {
+        margin-bottom: 2.5%;
+    }
+
+    .personne input {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-bottom: 2.5%;
+        padding-top: 2.5%;
+    }
+
+    .nom{
+        margin-top: 2.5%;
+        margin-left: 10%;
+    }
+
+    /* checkbox */
+
+    .choix {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Milieu */
+
+    .milieu {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2.5%;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .formulaire h1 {
+        text-align: center;
+    }
+
+    .personne {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+    #haut {
+        font-size: 1rem;
+        margin-top: 2%;
+    }
+
+    .personne label p {
+        font-size: 1rem;
+    }
+
+    .personne input {
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 0%;
+        padding-top: 0%;
+        width: 50%;
+    }
+
+    /* checkbox */
+
+    .choix {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: 2.5%;
+    }
+
+    .choix input {
+        margin-left:5%;
+    }
+    .particulier input{
+        margin-left: 12.5%;
+    }
+    .organisme input{
+        margin-left: 11%;
+    }
+
+    /* Milieu */
+
+    .milieu {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2.5%;
+    }
+
+    .Document {
+        margin-bottom: 2.5%;
+    }
 
 }
