@@ -10,4 +10,6 @@ export class CheminsService {
   racine = "./assets/Logos-officiels"
 
   SvgP ="/SVG/SVG-Petit-Logo"
+
+  NavFooter = true;
 }
